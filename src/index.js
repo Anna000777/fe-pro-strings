@@ -6,8 +6,8 @@
  */
 export const replaceZAndVFromString = (string) => {
     let newString = '';
-    for (let letter of string.toLowerCase()) {
-        if (letter === 'z' || letter === 'v') {
+    for (let letter of string) {
+        if (letter.toLowerCase() === 'z' || letter.toLowerCase() === 'v') {
             let star = '*';
             newString = `${newString}${star}`;
         } else {

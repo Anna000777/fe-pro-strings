@@ -31,7 +31,7 @@ export const changeWord = (string, word, newWord) => {
     let newString = '';
     if (string.toLowerCase().includes(word.toLowerCase())) {
         let index = string.toLowerCase().indexOf(word.toLowerCase());
-        let lastIndex = string.toLowerCase().lastIndexOf(word.toLocaleLowerCase());
+        let lastIndex = string.toLowerCase().lastIndexOf(word.toLowerCase());
         newString = `${string.slice(0,index)}${newWord}${string.slice(lastIndex + word.length)}`;
     } else {
         newString = string;
